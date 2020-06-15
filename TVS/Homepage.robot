@@ -7,15 +7,15 @@ ${browser}        chrome
 
 *** Test Cases ***
 Logo and copy rights verification
-    Local browser launch
-    #Jenkins browser launch
+    #Local browser launch
+    Jenkins browser launch
     Element Should Be Visible    xpath=.//a[@class='site-logo']
     Sleep    4s
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Element Text Should Be    xpath=.//p[@class='copyrights-footer']    Copyright @ 2019 TVS Insurance. All Rights Reserved
     Execute JavaScript    window.scrollTo(document.body.scrollHeight, 0)
 
-header menu verification
+header menu list verification
     ${menu_list}=    Get Element Count    xpath=.//ul[@class='we-mega-menu-ul nav nav-tabs']/li
     Should Be True    ${menu_list}>=4
 
