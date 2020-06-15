@@ -26,7 +26,7 @@ header and footer verification
     Element Should Be Visible    xpath=.//footer
     Execute JavaScript    window.scrollTo(document.body.scrollHeight, 0)
 
-Car insur insurance
+Car register number
     Click Element    xpath=.//label[@for='edit-carreg-no']
     Input Text    id=edit-carreg-no    KA-07-8742
     Click Element    id=edit-submit
