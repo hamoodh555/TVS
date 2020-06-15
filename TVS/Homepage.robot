@@ -31,7 +31,7 @@ Car insur insurance
     Input Text    id=edit-carreg-no    KA-07-8742
     Click Element    id=edit-submit
 
-Find your cards
+Find your cars
     Click Element    xpath=(.//ul[@class='popular-cars']/li[contains(.,'BMW')])[1]
     Select From List By Label    id=edit-select-your-type    118D SPORT LINE
     Select From List By Label    id=edit-select-your-fuel-type    DIESEL
