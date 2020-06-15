@@ -24,6 +24,7 @@ header and footer verification
     Sleep    4s
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Element Should Be Visible    xpath=.//footer
+    Execute JavaScript    window.scrollTo(document.body.scrollHeight, 0)
 
 Car insur insurance
     Click Element    xpath=.//label[@for='edit-carreg-no']
